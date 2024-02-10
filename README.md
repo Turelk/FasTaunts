@@ -7,11 +7,13 @@ simple lightweight addon.
 - fast_taunt_menu (FasTaunt menu)
 # Installing Via Workshop
 1. Open workshop page
-2. Click subscirbe
-3. That's it!
+4. Click subscirbe
+5. Subscribe to [Lua Patcher](https://steamcommunity.com/sharedfiles/filedetails/?id=2403043112) (wont work without it)
+6. That's it!
 # Installing Manualy
 1. Download last version of FasTaunts from releases tab.
 2. Extract to <your_garrysmod_path_here>/addons/
-3. Enjoy!
+3. Subscribe/Install [Lua Patcher](https://steamcommunity.com/sharedfiles/filedetails/?id=2403043112) (wont work without it)
+4. Enjoy!
 
 *Misspell in repository name FasTaunts as a FasTaunter
