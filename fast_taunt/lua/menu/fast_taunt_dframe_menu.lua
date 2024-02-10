@@ -6,7 +6,7 @@ local function menu_open()
  WindowFrame:SetSize(700, 450)
  WindowFrame:SetSizable( false )
  WindowFrame:SetDraggable( true )
- WindowFrame:SetTitle("Fast Taunter Menu")
+ WindowFrame:SetTitle("FasTaunts Menu")
  WindowFrame:MakePopup()
 
  _G.fontNameTitle = "ROBOTOBOLDO"

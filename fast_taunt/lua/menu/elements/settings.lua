@@ -11,7 +11,7 @@ table_reserve = {
     ["blocknsfwinfo"] = "false",
     ["noswearwords"] = "false",
     ["nonsfw"] = "false",
-    ["modinstallnotif"] = "true",
+    ["modinstallnotif"] = "false",
     ["mathrandomseed"] = "os.time()",
     ["killingtauntfile"] = "taunt",
     ["randomizerresults"] = "false",
@@ -51,6 +51,7 @@ ModNotifCheckbox:SetTextColor( Color( colorschemefont, colorschemefont, colorsch
 ModNotifCheckbox:SetText("Notification about mod installed")
 ModNotifCheckbox:SetValue( _G.config["modinstallnotif"] )
 ModNotifCheckbox:SizeToContents()
+ModNotifCheckbox:SetTooltip("Should it give you a notification about mod installed. (default: false)")
 function ModNotifCheckbox:OnChange( val )
 	if val then
 		_G.config["modinstallnotif"] = "true"
@@ -65,6 +66,7 @@ ModBootDialog:SetTextColor( Color( colorschemefont, colorschemefont, colorscheme
 ModBootDialog:SetText("Log in console mod's default boot up dialogue")
 ModBootDialog:SetValue( _G.config["bootupdialogue"] )
 ModBootDialog:SizeToContents()
+ModBootDialog:SetTooltip("Should it log default boot up dialogue in the console. (default: true)")
 function ModBootDialog:OnChange( val )
     if val then
         _G.config["bootupdialogue"] = "true"
@@ -80,6 +82,7 @@ AllowInterpretation:SetTextColor( Color( colorschemefont, colorschemefont, color
 AllowInterpretation:SetText("Allow Interpretation")
 AllowInterpretation:SetValue( _G.config["interpretation"] )
 AllowInterpretation:SizeToContents()
+AllowInterpretation:SetTooltip("Allow interpretations from interpretation.json file (will replace fast_taunt's parameter marked in interpretation.json file as a key, with it's value.)")
 function AllowInterpretation:OnChange( val )
     if val then
         _G.config["interpretation"] = "true"
@@ -91,9 +94,10 @@ end
 local RaCustomSeeder = vgui.Create( "DTextEntry", panel3 )
     RaCustomSeeder:SetPos( 20, 100 )
 	RaCustomSeeder:DockMargin( 0, 5, 0, 0 )
-	RaCustomSeeder:SetPlaceholderText("nonworking")
+	RaCustomSeeder:SetPlaceholderText(_G.config["mathrandomseed"])
+    RaCustomSeeder:SetTooltip("NON WORKING FOR NOW! Sets custom math.random() seed.")
 	RaCustomSeeder.OnEnter = function( self )
-        _G.config["interpretation"] = self:GetValue()
+        _G.config["mathrandomseed"] = self:GetValue()
     end
 
 
@@ -103,6 +107,7 @@ colorschemebox:SetSize( 105, 20 )
 colorschemebox:SetValue( _G.config["colorscheme"] )
 colorschemebox:AddChoice( "white" )
 colorschemebox:AddChoice( "black" )
+colorschemebox:SetTooltip("GUI colorscheme")
 colorschemebox.OnSelect = function( self, index, value )
 	print( value .. " was selected at index " .. index )
 	_G.config["colorscheme"] = value
@@ -112,6 +117,7 @@ local Apply = vgui.Create( "DButton", panel3 )
 Apply:SetText( "Apply" )
 Apply:SetPos( 560, 320 )
 Apply:SetSize( 100, 30 )
+Apply:SetTooltip("Apply changes")
 Apply.DoClick = function()
     configfile = util.TableToJSON(_G.config)
     file.Write("fast_taunt/config.json", configfile)
@@ -123,6 +129,7 @@ local Cancel = vgui.Create( "DButton", panel3 )
 Cancel:SetText( "Cancel" )
 Cancel:SetPos( 450, 320 )
 Cancel:SetSize( 100, 30 )
+Cancel:SetTooltip("Cancel all the changes")
 Cancel.DoClick = function()
      include("menu/fast_taunt_dframe_menu.lua")
      _G.WindowFrame:Close()
