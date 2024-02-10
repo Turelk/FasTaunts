@@ -1,4 +1,5 @@
-# FasTaunter V4.0
+![fastaunts](https://github.com/Turelk/FasTaunter/assets/157890839/13ad65e7-b3c0-46ac-b2f5-4d07db62f90c)
+
 FasTaunter is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files
 FasTauner is simple lightweight addon.
 # Installing Via Workshop
