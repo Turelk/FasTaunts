@@ -1,4 +1,5 @@
 --Fast Taunt V2 By Turelk
+--Please be advised, this file will not work! Use any other version instead
  math.randomseed(os.time())
 concommand.Add( "fast_taunt", function( ply, cmd, args, str )
   command_argument = str
@@ -68,11 +69,10 @@ end )
     [4] = "I have no idea"
 }
  table_suck = {
-    [1] = "It sucks",
-    [2] = "Sucks",
-    [3] = "dammn' that shit sucks",
-    [4] = "suck",
-    [5] = "shit"
+    [1] = "This is baaad!",
+    [2] = "No, fiddlesticks! What Now?",
+    [3] = "dammn' it",
+    [4] = "shit"
 }
  table_sorry = {
     [1] = "I'm sorry",
@@ -83,14 +83,9 @@ end )
 }
  table_taunt = {
     [1] = "Thanks fer standin' still, wanker!",
-    [2] = "you suck",
-    [3] = "My pröffesional opinion? Haha You're dead!",
-    [4] = "weak",
-    [5] = "Is it all you have got?",
-    [6] = "Good job",
-    [7] = "You are so powerfull lol.",
-    [8] = "Oops! Zat vas not Medizin!",
-    [9] = "You even held weapon before?",
-    [10] = "That was bad...",
-    [11] = "You got blood on my suit"
+    [2] = "My pröffesional opinion? Haha You're dead!",
+    [3] = "Is it all you have got?",
+    [4] = "Good job",
+    [5] = "Oops! Zat vas not Medizin!",
+    [6] = "You got blood on my suit"
 }
