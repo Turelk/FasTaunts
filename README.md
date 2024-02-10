@@ -1,4 +1,4 @@
-# FasTaunter
+# FasTaunter V4.0
 FasTaunter is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files
 FasTauner is simple lightweight addon.
 # Installing Via Workshop
