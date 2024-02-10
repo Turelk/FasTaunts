@@ -1,7 +1,7 @@
 ![fastaunts](https://github.com/Turelk/FasTaunter/assets/157890839/13ad65e7-b3c0-46ac-b2f5-4d07db62f90c)
 
-FasTaunts is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files
-FasTaunts is simple lightweight addon.
+FasTaunts is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files, and it is
+simple lightweight addon.
 # Console Commands
 - fast_taunt <filename> (example fast_taunt taunt | Fast taunt)
 - fast_taunt_menu (FasTaunt menu)
