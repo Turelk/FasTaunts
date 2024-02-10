@@ -2,6 +2,9 @@
 
 FasTaunts is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files
 FasTaunts is simple lightweight addon.
+# Console Commands
+- fast_taunt <filename> (example fast_taunt taunt | Fast taunt)
+- fast_taunt_menu (FasTaunt menu)
 # Installing Via Workshop
 1. Open workshop page
 2. Click subscirbe
