@@ -35,3 +35,25 @@ Workshop:SetSize( 100, 30 )
 Workshop.DoClick = function()
     RequestOpenURL( "https://steamcommunity.com/id/turelk/" )
 end
+
+local Github = vgui.Create( "DButton", panel1 )
+Github:SetText( "Github Page" )
+Github:SetPos( 120, 320 )
+Github:SetSize( 100, 30 )
+Github.DoClick = function()
+    RequestOpenURL( "https://github.com/Turelk/FasTaunter" )
+end
+
+local MyWorkshop = vgui.Create( "DButton", panel1 )
+MyWorkshop:SetText( "My Workshop :)" )
+MyWorkshop:SetPos( 230, 320 )
+MyWorkshop:SetSize( 100, 30 )
+MyWorkshop.DoClick = function()
+    RequestOpenURL( "https://github.com/Turelk/FasTaunter" )
+end
+
+MadeBy = vgui.Create( "DLabel", panel1 )
+MadeBy:SetSize( 200, 50 )
+MadeBy:SetPos( 580, 345 )
+MadeBy:SetText( "Made By Turelk" )
+MadeBy:SetTextColor( Color( colorschemefont, colorschemefont, colorschemefont) )
