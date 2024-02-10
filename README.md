@@ -10,3 +10,5 @@ FasTaunts is simple lightweight addon.
 1. Download last version of FasTaunts from releases tab.
 2. Extract to <your_garrysmod_path_here>/addons/
 3. Enjoy!
+
+*Misspell in repository name FasTaunts as a FasTaunter
