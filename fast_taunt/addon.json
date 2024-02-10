@@ -1,0 +1,11 @@
+{
+	"title"		:	"Fast Taunter",
+	"type"		:	"tool",
+	"tags"		:	[ "fun", "scenic" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
