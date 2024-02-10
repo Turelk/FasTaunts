@@ -3,15 +3,11 @@
  num = math.random(1,#table1)
  table1 = {
     [1] = "Thanks fer standin' still, wanker!",
-    [2] = "you suck",
-    [3] = "My pröffesional opinion? Haha You're dead!",
-    [4] = "weak",
-    [5] = "Is it all you have got?",
-    [6] = "Good job",
-    [7] = "You are so powerfull lol.",
-    [8] = "Oops! Zat vas not Medizin!",
-    [9] = "You even held weapon before?",
-    [10] = "That was bad...",
+    [2] = "My pröffesional opinion? Haha You're dead!",
+    [3] = "weak",
+    [4] = "Is it all you have got?",
+    [5] = "Good job",
+    [6] = "Oops! Zat vas not Medizin!",
 }
 print("Taunt Content: ".. table1[num])
 taunt = table1[num]
