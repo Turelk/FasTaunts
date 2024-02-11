@@ -27,8 +27,7 @@ No logo for now :(
 2. Extract to <your_garrysmod_path_here>/addons/
 3. Subscribe/Install [Lua Patcher](https://steamcommunity.com/sharedfiles/filedetails/?id=2403043112) (wont work without it)
 4. Enjoy!
-# How to use
-Step 1 - JSON Taunt files
+# How to use JSON Taunt tables
 In order to use FasTaunts you need to create taunt files in your `garrysmod/data/fast_taunt` folder
 Here is example of a taunt file named `hello.json` content:
 
