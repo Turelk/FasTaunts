@@ -15,8 +15,8 @@ No logo for now :(
 - Configuration
 - Taunts stored in JSON files, what means you can create your own!
 # Console Commands
-- fast_taunt <filename> (Fast taunting)
-- fast_taunt_menu (FasTaunt menu)
+- `fast_taunt <filename>` (Fast taunting)
+- `fast_taunt_menu` (FasTaunt menu)
 # Installing Via Workshop
 1. Open workshop page
 4. Click subscirbe
@@ -27,3 +27,16 @@ No logo for now :(
 2. Extract to <your_garrysmod_path_here>/addons/
 3. Subscribe/Install [Lua Patcher](https://steamcommunity.com/sharedfiles/filedetails/?id=2403043112) (wont work without it)
 4. Enjoy!
+# How to use
+Step 1 - JSON Taunt files
+In order to use FasTaunts you need to create taunt files in your `garrysmod/data/fast_taunt` folder
+Here is example of a taunt file named `hello.json` content:
+
+`{ "1":"Hi guys!", "2":"Hello mates!", "3":"Hi, everybody!", "4":"Hello" }`
+
+Now you can use this taunt file like this: `fast_taunt hello`
+# Interpretation.json
+Interpretation.json file contains keys that must be replaced with it's values, if `Allow interpretation` is enabled.
+Example:
+`{ "hi":"hello", "hey":"hello"}`
+Now you can use `hello.json` taunt file like this: `fast_taunt hi` or like this `fast_taunt hello`, or like this `fast_taunt hey`
