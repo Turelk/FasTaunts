@@ -36,6 +36,8 @@ Here is example of a taunt file named `hello.json` content:
 Now you can use this taunt file like this: `fast_taunt hello`
 # Interpretation.json
 Interpretation.json file contains keys that must be replaced with it's values, if `Allow interpretation` is enabled.
+
 Example:
 `{ "hi":"hello", "hey":"hello"}`
+
 Now you can use `hello.json` taunt file like this: `fast_taunt hi` or like this `fast_taunt hello`, or like this `fast_taunt hey`
