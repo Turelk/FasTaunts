@@ -1,4 +1,5 @@
-![fastaunts](https://github.com/Turelk/FasTaunter/assets/157890839/13ad65e7-b3c0-46ac-b2f5-4d07db62f90c)
+![fastaunts_github](https://github.com/Turelk/FasTaunts/assets/157890839/74063c69-38ff-4266-95df-c8b38e2702ef)
+
 
 FasTaunts is a Garry's mod addon, allowing fast chatting by using `math.random()` and `.json` files, 
 
